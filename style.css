@@ -1,0 +1,242 @@
+/* ------ Style général ------ */
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(orange, red, orange);
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+}
+
+header{
+    padding: 20px;
+}
+
+body article {
+    background-color: white;
+}
+
+main {
+    margin-bottom: 125px;
+}
+
+p {
+    text-align: justify;
+}
+
+/* ------ Index ------ */
+.index main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+}
+
+.index main h1 {
+    font-size: 300%;
+}
+
+.index article {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid white;
+    box-shadow: 5px 5px 5px wheat;
+    border-radius: 25px;
+}
+
+@media screen and (max-width: 200px) {
+    .index main nav ul li:first-child a, .barNav ul li:first-child a {
+        border-radius: 25px 0px 0px 25px;
+    }
+    
+    .index main nav ul li:last-child a, .barNav ul li:last-child a {
+        border-radius: 0px 25px 25px 0px;
+    }
+}
+
+/* ------ NavBar ------- */
+.barNav {
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.barNav a{
+    background-color: white;
+}
+
+.index main nav ul, .barNav ul {
+    display: flex;
+    flex-direction: row;
+    border-radius: 25px;
+    width: max-content;
+    padding: 0px;
+}
+
+.index main nav li, .barNav li {
+    list-style-type: none;
+}
+
+.index main nav a, .barNav a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 25px;
+    font-size: 150%;
+}
+
+.barNav a {
+    font-size: 120%;
+}
+
+.nav1:hover {
+    background-color: brown;
+    color: white;
+}
+
+.nav2:hover {
+    background-color: rgb(209, 32, 32);
+    color: white;
+}
+
+.nav3:hover {
+    background-color: rgb(252, 90, 49);
+    color: black;
+}
+
+.nav4:hover {
+    background-color: rgb(255, 196, 0);
+    color: black;
+}
+
+.index main nav ul li:first-child a, .barNav ul li:first-child a {
+    border-radius: 25px 0px 0px 25px;
+}
+
+.index main nav ul li:last-child a, .barNav ul li:last-child a {
+    border-radius: 0px 25px 25px 0px;
+}
+
+/* ------ Association ------ */
+
+.association p {
+    margin: 0px;
+}
+
+.association header {
+    text-align: center;
+}
+
+.engagements {
+    display: flex;
+    justify-content: center;
+    height: max-content;
+}
+
+.engagements article {
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid white;
+    box-shadow: 5px 5px 5px wheat;
+    border-radius: 25px;
+    flex-basis: 33%;
+}
+
+.engagements article h2 {
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.ideklic {
+    float: left;
+    margin: 0 6px 0 0;
+}
+
+@media screen and (max-width: 1000px) {
+    .engagements {
+        flex-direction: column;
+    }
+}
+
+/* ------ A Propos ------ */
+
+
+
+/* ------ Projet ------ */
+
+.mesProjets{
+    display: flex;
+}
+
+.mesProjets article {
+    border: 2px solid white;
+    box-shadow: 5px 5px 5px wheat;
+    border-radius: 25px;
+    flex-basis: 50%;
+    margin: 20px;
+    padding: 20px;
+}
+
+.mesProjets details{
+    list-style-type: armenian;
+}
+
+.projet {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 800px) {
+    .mesProjets {
+        flex-direction: column;
+    }
+}
+
+/* ------ Details Projets ------ */
+
+.page_projet div{
+    display: flex;
+}
+
+.page_projet div article{
+    border: 2px solid white;
+    box-shadow: 5px 5px 5px wheat;
+    border-radius: 25px;
+    flex-basis: 50%;
+    margin: 20px;
+    padding: 20px;
+}
+
+.page_projet div:last-of-type article{
+    flex-basis: 100%;
+}
+
+.supportprojet figure {
+    width: fit-content;
+}
+
+.contenuSupportProjet {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 800px) {
+    .page_projet div:first-of-type {
+        flex-direction: column;
+    }
+}
