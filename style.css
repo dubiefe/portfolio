@@ -57,6 +57,7 @@ dt, dd, .page_projet a{
 .index main p {
     margin-top: 30px;
     font-size: 175%;
+    text-indent: 0px;
 }
 
 .index article {
@@ -146,6 +147,20 @@ dt, dd, .page_projet a{
 
 .index main nav ul li:last-child a, .barNav ul li:last-child a {
     border-radius: 0px 25px 25px 0px;
+}
+
+@media screen and (max-width:800px) {
+    .index main nav ul {
+        flex-direction: column;
+    }
+
+    .index main nav ul li:first-child a{
+        border-radius: 25px 25px 0px 0px;
+    }
+    
+    .index main nav ul li:last-child a{
+        border-radius: 0px 0px 25px 25px;
+    }
 }
 
 /* ------ Association & A propos ------ */
@@ -253,6 +268,11 @@ dt, dd, .page_projet a{
 
 .competencesprojet div {
     flex-wrap: wrap;
+}
+
+.page_projet img {
+    float: left;
+    margin: 5px;
 }
 
 @media screen and (max-width: 800px) {
