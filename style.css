@@ -25,11 +25,18 @@ body article {
 }
 
 main {
-    margin-bottom: 125px;
+    margin-bottom: 150px;
 }
 
 p {
     text-align: justify;
+    font-size: 120%;
+    text-indent: 50px;
+    margin: 10px;
+}
+
+dt, dd, .page_projet a{
+    font-size: 120%;
 }
 
 /* ------ Index ------ */
@@ -40,11 +47,16 @@ p {
     align-items: center;
     width: 100%;
     height: 100%;
-    gap: 20px;
 }
 
 .index main h1 {
     font-size: 300%;
+    margin-bottom: 0px;
+}
+
+.index main p {
+    margin-top: 30px;
+    font-size: 175%;
 }
 
 .index article {
@@ -75,14 +87,14 @@ p {
     transform: translate(-50%,-50%);
 }
 
-.barNav a{
-    background-color: white;
+.barNav ul {
+    border: 2px solid orange;
 }
 
 .index main nav ul, .barNav ul {
     display: flex;
     flex-direction: row;
-    border-radius: 25px;
+    border-radius: 27px;
     width: max-content;
     padding: 0px;
 }
@@ -95,8 +107,13 @@ p {
     text-decoration: none;
     color: black;
     display: block;
-    padding: 25px;
+    padding: 50px;
     font-size: 150%;
+}
+
+.barNav a{
+    background-color: white;
+    padding: 25px;
 }
 
 .barNav a {
@@ -131,11 +148,7 @@ p {
     border-radius: 0px 25px 25px 0px;
 }
 
-/* ------ Association ------ */
-
-.association p {
-    margin: 0px;
-}
+/* ------ Association & A propos ------ */
 
 .association header {
     text-align: center;
@@ -166,15 +179,20 @@ p {
     margin: 0 6px 0 0;
 }
 
+.formContact {
+    flex-direction: column;
+    background-color: lightgray;
+    border: 2px solid darkgray;
+    padding: 10px;
+    margin: 10px;
+    width: fit-content;
+}
+
 @media screen and (max-width: 1000px) {
     .engagements {
         flex-direction: column;
     }
 }
-
-/* ------ A Propos ------ */
-
-
 
 /* ------ Projet ------ */
 
@@ -198,6 +216,10 @@ p {
 .projet {
     margin-top: 20px;
     margin-bottom: 5px;
+}
+
+.projetIUT p {
+    text-indent: -10px;
 }
 
 @media screen and (max-width: 800px) {
@@ -225,13 +247,11 @@ p {
     flex-basis: 100%;
 }
 
-.supportprojet figure {
+.page_projet figure {
     width: fit-content;
 }
 
-.contenuSupportProjet {
-    display: flex;
-    justify-content: space-evenly;
+.competencesprojet div {
     flex-wrap: wrap;
 }
 
