@@ -7,9 +7,10 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
-    height: 100%;
+    height: fit-content;
     background: linear-gradient(orange, red, orange);
     background-size: cover;
+    padding-bottom: 1px;
 }
 
 h1{
@@ -18,6 +19,7 @@ h1{
 
 header{
     padding: 20px;
+    text-align: center;
 }
 
 body article {
@@ -25,7 +27,7 @@ body article {
 }
 
 main {
-    margin-bottom: 150px;
+    margin-bottom: 200px;
 }
 
 p {
@@ -40,6 +42,10 @@ dt, dd, .page_projet a{
 }
 
 /* ------ Index ------ */
+.index {
+    height: 100%;
+}
+
 .index main {
     display: flex;
     flex-direction: column;
@@ -163,16 +169,17 @@ dt, dd, .page_projet a{
     }
 }
 
-/* ------ Association & A propos ------ */
-
-.association header {
-    text-align: center;
-}
+/* ------ Association ------ */
 
 .engagements {
     display: flex;
     justify-content: center;
     height: max-content;
+}
+
+.engagements section {
+    display: flex;
+    flex-direction: column;
 }
 
 .engagements article {
@@ -181,7 +188,7 @@ dt, dd, .page_projet a{
     border: 2px solid white;
     box-shadow: 5px 5px 5px wheat;
     border-radius: 25px;
-    flex-basis: 33%;
+    flex-basis: 50%;
 }
 
 .engagements article h2 {
@@ -194,6 +201,34 @@ dt, dd, .page_projet a{
     margin: 0 6px 0 0;
 }
 
+@media screen and (max-width: 1000px) {
+    .engagements {
+        flex-direction: column;
+    }
+}
+
+/* ------ A Propos ------ */
+
+.apropos {
+    display: flex;
+    justify-content: center;
+    height: max-content;
+}
+
+.apropos article {
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid white;
+    box-shadow: 5px 5px 5px wheat;
+    border-radius: 25px;
+    flex-basis: 33%;
+}
+
+.apropos article h2 {
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
 .formContact {
     flex-direction: column;
     background-color: lightgray;
@@ -203,8 +238,12 @@ dt, dd, .page_projet a{
     width: fit-content;
 }
 
+.formContact textarea {
+    resize: none;
+}
+
 @media screen and (max-width: 1000px) {
-    .engagements {
+    .apropos {
         flex-direction: column;
     }
 }
@@ -224,17 +263,44 @@ dt, dd, .page_projet a{
     padding: 20px;
 }
 
-.mesProjets details{
-    list-style-type: armenian;
-}
-
 .projet {
     margin-top: 20px;
     margin-bottom: 5px;
 }
 
 .projetIUT p {
-    text-indent: -10px;
+    text-indent: 10px;
+}
+
+.mesProjets div {
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.mesProjets div:hover {
+    border: solid 3px orange;
+}
+
+.mesProjets div:active {
+    background-color: orange;
+}
+
+.mesProjets h2 p {
+    font-size: 18px;
+    text-indent: 0;
+    display: contents;
+}
+
+.mesProjets h3 {
+    margin-left: 5px;
+}
+
+.mesProjets a {
+    text-decoration: none;
+    color: black;
 }
 
 @media screen and (max-width: 800px) {
@@ -245,11 +311,16 @@ dt, dd, .page_projet a{
 
 /* ------ Details Projets ------ */
 
-.page_projet div{
+.page_projet div, .page_projet_perso div{
     display: flex;
 }
 
-.page_projet div article{
+.corps_projet div {
+    display: flex;
+    align-items: center;
+}
+
+.page_projet div article, .page_projet_perso div article {
     border: 2px solid white;
     box-shadow: 5px 5px 5px wheat;
     border-radius: 25px;
@@ -258,25 +329,35 @@ dt, dd, .page_projet a{
     padding: 20px;
 }
 
-.page_projet div:last-of-type article{
+.page_projet div article:first-of-type {
     flex-basis: 100%;
 }
 
-.page_projet figure {
-    width: fit-content;
+.page_projet .competencesprojet img {
+    float: left;
+    margin: 5px;
+    width: 100px;
 }
 
 .competencesprojet div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.page_projet_perso article div {
     flex-wrap: wrap;
 }
 
-.page_projet img {
-    float: left;
-    margin: 5px;
+.page_projet_perso img {
+    transition: transform .1s;
+}
+
+.page_projet_perso img:hover{
+    transform: scale(1.6);
 }
 
 @media screen and (max-width: 800px) {
-    .page_projet div:first-of-type {
+    .corps_projet {
         flex-direction: column;
     }
 }
