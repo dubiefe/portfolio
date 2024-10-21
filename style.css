@@ -8,7 +8,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     height: fit-content;
-    background: linear-gradient(orange, red, orange);
+    background: linear-gradient(darkorange, red, darkorange);
     background-size: cover;
     padding-bottom: 1px;
 }
@@ -230,16 +230,34 @@ dt, dd, .page_projet a{
 }
 
 .formContact {
+    display: flex;
     flex-direction: column;
-    background-color: lightgray;
-    border: 2px solid darkgray;
+    gap: 15px;
+    background-color: rgb(255, 209, 125);
+    border: 2px solid orange;
+    border-radius: 10px;
     padding: 10px;
     margin: 10px;
-    width: fit-content;
+    width: 93%;
+}
+
+.formContact div {
+    display: flex;
+    flex-direction: column;
 }
 
 .formContact textarea {
     resize: none;
+}
+
+.submitButton {
+    height: 30px;
+    background-color: wheat;
+    border: 2px ridge white;
+}
+
+.submitButton:hover {
+    background-color: beige;
 }
 
 @media screen and (max-width: 1000px) {
@@ -278,6 +296,7 @@ dt, dd, .page_projet a{
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
+    border: solid 3px white;
 }
 
 .mesProjets div:hover {

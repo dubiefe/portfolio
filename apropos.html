@@ -22,7 +22,8 @@
     <main class="apropos">
         <article>
             <h2>À propos de moi</h2>
-            <p>Je suis une étudiante en informatique depuis un an à l'IUT2 de Grenoble. J'aimerais devenir développeuse puisque je m'épanouis dans mes études notamment dans les cours de programmation. C'est un métier qui m'intéresse aussi pour sa versatilité. En effet, il offre la possibilité de travailler avec des clients tous plus différents les uns que les autres, cela me permettrait de découvrir d'autres secteurs d'activité et leur fonctionnement. J'aspire toujours à découvrir quelque chose de nouveau, c'est pourquoi j'adore apprendre de nouvelles langues. Je parle anglais à un niveau C1 et allemand à un niveau B1. De plus, je suis actuellement entrain d'apprendre l'espagnol et je possède quelques bases de mandarin. Je désire également faire ma troisième année d'études à l'étranger pour avoir l'occasion d'étudier en anglais, ce qui, je pense, me sera fortement bénéfique dans le milieu professionnel, et me permettra aussi de découvrir d'autres cultures.</p>
+            <p>Je suis une étudiante en informatique depuis un an à l'IUT2 de Grenoble. J'aimerais devenir développeuse puisque je m'épanouis dans mes études notamment dans les cours de programmation. C'est un métier qui m'intéresse aussi pour sa polyvalence. En effet, il offre la possibilité de travailler avec des clients tous plus différents les uns que les autres, cela me permettrait de découvrir d'autres secteurs d'activité et leur fonctionnement.</p>
+            <p>J'aspire toujours à découvrir quelque chose de nouveau, c'est pourquoi j'adore apprendre de nouvelles langues. Je parle anglais à un niveau C1 et allemand à un niveau B1. De plus, je suis actuellement entrain d'apprendre l'espagnol et je possède quelques bases de mandarin. Je désire également faire ma troisième année d'études à l'étranger pour avoir l'occasion d'étudier en anglais, ce qui, je pense, me sera fortement bénéfique dans le milieu professionnel, et me permettra aussi de découvrir d'autres cultures.</p>
         </article>
         <article>
             <h2>Mes centres d'intérêt</h2>
@@ -33,21 +34,26 @@
         </article>
         <article>
             <h2>Me Contacter</h2>
-            <p>Mail: emiliedubief@free.fr</p>
-            <p>Téléphone: 07 49 06 22 43</p>
-            <form class="formContact"  method="get" action="apropos.html"> 
+            <p>Mail : emiliedubief@free.fr</p>
+            <p>Mail IUT : emilie.dubief@etu.univ-grenoble-alpes.fr</p>
+            <p>Téléphone : 07.49.06.22.43</p>
+            <form class="formContact" action="mail.php" method="post"> 
                 <div>
-                    <label for="email">Envoyez-moi un mail</label>
+                    <label>Envoyer un mail</label>
                 </div>
                 <div>
-                    <input id="email" type="email" name="email" placeholder="adresse mail" required>
+                    <label for="email">Adresse mail :</label>
+                    <input type="email" name="email" id="email" placeholder="adresse mail" required>
                 </div>
                 <div>
-                    <textarea name="ta" id="ta" rows="10" cols="45"></textarea>
-                </div>
+                    <label for="subject">Sujet :</label>
+                    <input type="text" name="subject" id="subject" rows="10" cols="45" placeholder="message"></input>
+                </div> 
                 <div>
-                    <input type="submit" value="Envoyer">
-                </div>
+                    <label for="message">Votre message :</label>
+                    <textarea name="message" id="message" rows="10" cols="45" placeholder="message"></textarea>
+                </div> 
+                <input class="submitButton" type="submit" value="Envoyer">
             </form>
         </article>
     </main>
