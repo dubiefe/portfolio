@@ -1,0 +1,122 @@
+/* ------ Projet ------ */
+
+.mesProjets{
+    display: flex;
+    margin-top: 7%;
+}
+
+.mesProjets article {
+    flex-basis: 50%;
+}
+
+.projet {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.projetIUT p {
+    text-indent: 10px;
+}
+
+.mesProjets div {
+    background-color: rgb(255, 245, 223);
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: solid 3px rgb(255, 245, 223);
+}
+
+.mesProjets div:hover {
+    border: solid 3px orange;
+}
+
+.mesProjets div:active {
+    background-color: orange;
+}
+
+.mesProjets h2 p {
+    font-size: 18px;
+    text-indent: 0;
+    display: contents;
+}
+
+.mesProjets h3 {
+    margin-left: 5px;
+}
+
+.mesProjets a {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 800px) {
+    .mesProjets {
+        flex-direction: column;
+        margin-top: 25%;
+    }
+}
+
+/* ------ Details Projets ------ */
+
+h1 {
+    margin-top: 8%;
+}
+
+.page_projet div, .page_projet_perso div{
+    display: flex;
+}
+
+.corps_projet div {
+    display: flex;
+    align-items: center;
+}
+
+.page_projet div article, .page_projet_perso div article {
+    flex-basis: 50%;
+}
+
+.page_projet div article:first-of-type {
+    flex-basis: 100%;
+}
+
+.page_projet .competencesprojet img {
+    float: left;
+    margin: 5px;
+    width: 100px;
+}
+
+.competencesprojet div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.page_projet_perso article div {
+    flex-wrap: wrap;
+}
+
+.page_projet_perso img {
+    transition: transform .1s;
+}
+
+.page_projet_perso img:hover{
+    transform: scale(1.6);
+}
+
+.etape {
+    font-weight: bold;
+}
+
+.lienTelechargeable {
+    font-size: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .corps_projet {
+        flex-direction: column;
+    }
+
+    h1 {
+        margin-top: 30%;
+    }
+}

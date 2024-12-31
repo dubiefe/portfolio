@@ -1,0 +1,47 @@
+/* ------ NavBar ------- */
+.barNav {
+    width: 100%;
+    position: fixed;
+}
+
+.barNav ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+.barNav li {
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+}
+
+.barNav a {
+    text-decoration: none;
+    background-color: rgb(255, 176, 30);
+    color: black;
+    display: block;
+    padding: 7%;
+    font-size: 150%;
+}
+
+.navHover a {
+    background-color: rgb(209, 32, 32);
+    color: white;
+}
+
+.barNav a:hover {
+    background-color: rgb(209, 32, 32);
+    color: white;
+}
+
+@media screen and (max-width:800px) {
+    .barNav ul li a {
+        font-size: 100%;
+        padding: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

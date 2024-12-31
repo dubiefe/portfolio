@@ -1,0 +1,39 @@
+/* ------ A Propos & Association ------ */
+
+.aProposEngements {
+    display: flex;
+    justify-content: center;
+    height: max-content;
+    margin-top: 7%;
+}
+
+.aProposEngements section {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+}
+
+.aProposEngements article {
+    flex-basis: 100%;
+}
+
+.aProposEngements article h2 {
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.ideklic {
+    float: left;
+    margin: 20px 26px 20px 20px;
+}
+
+.ideklic li {
+    list-style-type: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .aProposEngements {
+        flex-direction: column;
+        margin-top: 25%;
+    }
+}
