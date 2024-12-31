@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Hanaya - Booking</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div>
+            <a href="index.html"><img src="images/logo.png" alt="Logo Hanaya" width="200px"></a>
+            <section>
+                <ul class="nav">
+                    <li class="ordermenu"><a href="index.html">Order</a>
+                        <ul>
+                            <li><a href="japan.html"><img src="images/japan.png" alt="Japan Flag" width="20px">Japan</a></li>
+                            <li><a href="china.html"><img src="images/china.png" alt="China Flag" width="20px">China</a></li>
+                            <li><a href="korea.html"><img src="images/korea.png" alt="Korea Flag" width="20px">Korea</a></li>
+                            <li><a href="vietnam.html"><img src="images/vietnam.png" alt="Vietnam Flag" width="20px">Vietnam</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="places.html"><p>Restaurants</p></a></li>
+                    <li><a href="booking.html"><p>Booking</p></a></li>
+                </ul>
+                <p class="subtitle">Book a table now in your favorite Hanaya</p>
+            </section>
+        </div>
+    </nav>
+    <nav class="navbarSmallScreen">
+        <div>
+            <a href="index.html"><img src="images/logo.png" alt="Logo Hanaya" width="200px"></a>
+            <section>
+                <ul class="navSmall">
+                    <li class="burger"><img src="images/list.svg" alt="burgerMenu" width="65px" class="burgerIcon">
+                        <ul class="firstLayer">
+                            <li class="ordermenuSmallScreen"><a href="index.html">Order</a>
+                                <ul>
+                                    <li><a href="japan.html"><img src="images/japan.png" alt="Japan Flag" width="20px">Japan</a></li>
+                                    <li><a href="china.html"><img src="images/china.png" alt="China Flag" width="20px">China</a></li>
+                                    <li><a href="korea.html"><img src="images/korea.png" alt="Korea Flag" width="20px">Korea</a></li>
+                                    <li><a href="vietnam.html"><img src="images/vietnam.png" alt="Vietnam Flag" width="20px">Vietnam</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="places.html"><p>Restaurants</p></a></li>
+                            <li><a href="booking.html"><p>Booking</p></a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <p class="subtitle">Book a table now in your favorite Hanaya</p>
+            </section>
+        </div>
+    </nav>
+    <section class="booking">
+        
+        <fieldset>
+        <h2 class="bookingTitle">Booking</h2>
+        <div class="divInput">
+        
+                <input type="text" name="name" placeholder="Name">
+                <input type="text" name="nbCustomers" placeholder="Number of people">
+                <input type="date" name="date">
+                <input type="time" name="hour">
+                <select name="restaurant">
+                    <option value="select">Select a restaurant</option>
+                    <option value="newyork">Hanaya New York</option>
+                    <option value="washington">Hanaya Washington DC</option>
+                    <option value="boston">Hanaya Boston</option>
+                </select>
+                <select name="country">
+                    <option value="select">Select a country</option>
+                    <option value="japan">Japan</option>
+                    <option value="china">China</option>
+                    <option value="vietnam">Vietnam</option>
+                    <option value="korea">Korea</option>
+                </select>
+                <div class="divCheckbox">
+                    <input type="checkbox" name="checkbox1">
+                    <label for="checkbox1">Terms and conditions</label>
+                </div>
+                <div class="divCheckbox">
+                    <input type="checkbox" name="checkbox2">
+                    <label for="checkbox2">Give personnal informations</label>
+                </div>
+        
+            <button class="bookingButton">
+                Send
+            </button>
+        </div>
+    </fieldset>
+    </section>
+    <footer>
+        <a href="#"><img src="images/twitter-x.svg" alt="X" width="50px"></a>
+        <a href="#"><img src="images/facebook.svg" alt="FaceBook" width="50px"></a>
+        <a href="#"><img src="images/instagram.svg" alt="Instagram" width="50px"></a>
+        <a href="#"><img src="images/tiktok.svg" alt="TikTok" width="50px"></a>
+    </footer>
+</body>
+</html>
