@@ -63,8 +63,10 @@ h1 {
     margin-top: 8%;
 }
 
-.page_projet div, .page_projet_perso div{
+.corps_projet {
     display: flex;
+    flex-direction: column;
+    flex-flow: column-reverse;
 }
 
 .corps_projet div {
@@ -72,8 +74,42 @@ h1 {
     align-items: center;
 }
 
+.competencesprojet div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.competencesprojet > div {
+    display: flex;
+    gap: 6vh;
+    margin-bottom: 0;
+}
+
+.competencesprojet div div {
+    display: flex;
+    flex-direction: column;
+}
+
+.competencesprojet img {
+    height: 11vh;
+}
+
+.competencesprojet p {
+    text-indent: 0;
+    text-align: center;
+}
+
+.page_projet_perso .corps_projet {
+    flex-direction: row;
+}
+
 .page_projet div article, .page_projet_perso div article {
     flex-basis: 50%;
+}
+
+.page_projet .competencesprojet {
+    flex-basis: 0;
+    height: fit-content;
 }
 
 .page_projet div article:first-of-type {
@@ -84,11 +120,6 @@ h1 {
     float: left;
     margin: 5px;
     width: 100px;
-}
-
-.competencesprojet div {
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .page_projet_perso article div {
@@ -109,6 +140,11 @@ h1 {
 
 .lienTelechargeable {
     font-size: 100%;
+}
+
+.page_projet iframe {
+    width: 75%;
+    height: 75vh;
 }
 
 @media screen and (max-width: 800px) {
