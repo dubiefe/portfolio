@@ -1,4 +1,15 @@
 // Affichage des projets IUT
+
+let dataFilePath;
+
+if (window.location.hostname !== 'dubiefe.github.io') {
+    // En local, on utilise le chemin relatif
+    dataFilePath = 'data/titre_projets.json';
+} else {
+    // Sur GitHub Pages, le projet est dans le dossier portfolio
+    dataFilePath = '/portfolio/data/titre_projets.json';
+}
+
 async function getProjet () {
     let resObj = await fetch("/data/titre_projets.json");
     if (resObj.ok) {

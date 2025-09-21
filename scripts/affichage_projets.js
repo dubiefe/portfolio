@@ -2,8 +2,18 @@
 const urlParams = new URLSearchParams(window.location.search);
 const code_projet = urlParams.get('projet');
 
+let dataFilePath;
+
+if (window.location.hostname !== 'dubiefe.github.io') {
+    // En local, on utilise le chemin relatif
+    dataFilePath = 'data/details_projets.json';
+} else {
+    // Sur GitHub Pages, le projet est dans le dossier portfolio
+    dataFilePath = '/portfolio/data/details_projets.json';
+}
+
 async function getProjet () {
-    let resObj = await fetch("/data/details_projets.json");
+    let resObj = await fetch(dataFilePath);
     if (resObj.ok) {
         // If the result is OK (Status HTTP between 200 and 299)
         const resJSON = await resObj.json();
