@@ -11,7 +11,7 @@ if (window.location.hostname !== 'dubiefe.github.io') {
 }
 
 async function getProjet () {
-    let resObj = await fetch("/data/titre_projets.json");
+    let resObj = await fetch(dataFilePath);
     if (resObj.ok) {
         // If the result is OK (Status HTTP between 200 and 299)
         const resJSON = await resObj.json();
