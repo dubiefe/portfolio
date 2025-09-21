@@ -48,9 +48,20 @@ async function afficheProjet (projets) {
     const btn_projets = document.getElementsByName("btn_projets");
 
     // Redirection lors du clique
+
+    let redirectionFilePath;
+
+    if (window.location.hostname !== 'dubiefe.github.io') {
+        // En local, on utilise le chemin relatif
+        redirectionFilePath = '/page_projet.html?projet=';
+    } else {
+        // Sur GitHub Pages, le projet est dans le dossier portfolio
+        redirectionFilePath = '/portfolio/page_projet.html?projet=';
+}
+
     btn_projets.forEach(btn_projet => {
         btn_projet.addEventListener('click', () => {
-            window.location.href = '/page_projet.html?projet=' + btn_projet.getAttribute('projet');
+            window.location.href = redirectionFilePath + btn_projet.getAttribute('projet');
         });
     });
 }
