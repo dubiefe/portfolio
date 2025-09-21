@@ -6,6 +6,7 @@
     height: 9vh;
     position: fixed;
     padding: 1vh;
+    z-index: 10;
 }
 
 .barNav div {

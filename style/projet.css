@@ -18,21 +18,22 @@
     text-indent: 10px;
 }
 
-.mesProjets div {
+.mesProjets div div {
     background-color: rgb(255, 245, 223);
     border-radius: 20px;
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-    border: solid 3px rgb(255, 245, 223);
+    margin-right: 2vh;
 }
 
-.mesProjets div:hover {
-    border: solid 3px orange;
+.divProjet {
+    display: flex;
+    align-items: center;
 }
 
-.mesProjets div:active {
-    background-color: orange;
+.divProjet div {
+    width: 90%;
 }
 
 .mesProjets h2 p {
@@ -48,6 +49,22 @@
 .mesProjets a {
     text-decoration: none;
     color: black;
+    background-color: orange;
+    box-shadow: 5px 5px wheat;
+    border-radius: 25%;
+    height: fit-content;
+    padding: 0.5vh;
+    cursor: pointer;
+}
+
+.mesProjets a img {
+    width: 7vh;
+    height: 7vh;
+}
+
+.mesProjets a:hover {
+    background-color: darkorange;
+    box-shadow: none;
 }
 
 @media screen and (max-width: 800px) {
@@ -58,6 +75,34 @@
 }
 
 /* ------ Details Projets ------ */
+
+header {
+    position: relative;
+}
+
+header a {
+    position: absolute;
+    background-color: orange;
+    box-shadow: 5px 5px wheat;
+    border-radius: 25%;
+    left: 2vh;
+    top: 16vh;
+    width: 8vh;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header a:hover {
+    background-color: darkorange;
+    box-shadow: none;
+}
+
+header a img {
+    width: 6vh;
+    height: 6vh;
+}
 
 h1 {
     margin-top: 8%;

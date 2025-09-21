@@ -35,13 +35,25 @@ async function afficheProjet (projets) {
         // Résumé
         const p = document.createElement("p");
         p.textContent = projet.resume;
-        // division
-        const div = document.createElement("div");
-        div.setAttribute("name","btn_projets");
-        div.setAttribute("projet",projet.code);
-        div.append(h3);
-        div.append(p);
-        projets_IUT.append(div);
+        // division Text
+        const divText = document.createElement("div");
+        divText.append(h3);
+        divText.append(p);
+        // Lien vers la page
+        const btn_projet = document.createElement("a");
+        btn_projet.setAttribute("name","btn_projets");
+        btn_projet.setAttribute("projet",projet.code);
+        const imageLoupe = document.createElement("img");
+        imageLoupe.src = "style/Images/magnifier-search-zoom-svgrepo-com.svg";
+        imageLoupe.alt = "plus d'information";
+        btn_projet.append(imageLoupe);
+        // Division globale
+        const divGlobale = document.createElement("div");
+        divGlobale.setAttribute("class","divProjet");
+        divGlobale.append(divText);
+        divGlobale.append(btn_projet);
+        // Ajout à la page
+        projets_IUT.append(divGlobale);
         projets_IUT.append(document.createElement("hr"));
     });
     // Récupération des éléments
