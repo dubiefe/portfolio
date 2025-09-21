@@ -3,7 +3,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const code_projet = urlParams.get('projet');
 
 async function getProjet () {
-    let resObj = await fetch("../data/details_projets.json");
+    let resObj = await fetch("/data/details_projets.json");
     if (resObj.ok) {
         // If the result is OK (Status HTTP between 200 and 299)
         const resJSON = await resObj.json();
