@@ -66,12 +66,16 @@ h1 {
 .corps_projet {
     display: flex;
     flex-direction: column;
-    flex-flow: column-reverse;
+    flex-flow: column;
 }
 
 .corps_projet div {
     display: flex;
     align-items: center;
+}
+
+.corps_projet section {
+    display: flex;
 }
 
 .competencesprojet div {
@@ -105,15 +109,6 @@ h1 {
 
 .page_projet div article, .page_projet_perso div article {
     flex-basis: 50%;
-}
-
-.page_projet .competencesprojet {
-    flex-basis: 0;
-    height: fit-content;
-}
-
-.page_projet div article:first-of-type {
-    flex-basis: 100%;
 }
 
 .page_projet .competencesprojet img {

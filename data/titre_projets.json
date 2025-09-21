@@ -1,0 +1,39 @@
+{
+    "IUT" : [
+        {
+            "code" : "ST4.01",
+            "titre" : "Uniformisation d'une suite d'application - BUT 2 (2024/2025)",
+            "resume" : "Lors du stage de fin de deuxième année de BUT, j'ai passé 10 semaines dans l'entreprise TotalEnergies afin d'uniformiser une suite d'application PowerApps"
+        },
+        {
+            "code" : "S3.01",
+            "titre" : "Développement d'une application web - BUT 2 (2024/2025)",
+            "resume" : "En équipe de sept, nous avons conçu et développé une application web destinée à valoriser le patrimoine français"
+        },
+        {
+            "code" : "S2.01256",
+            "titre" : "Création d'une application pour un organisateur d'événements - BUT 1 (2023/2024)",
+            "resume" : "En équipe de six, nous avons conçu et développé une application destinée à gérer les événements d'entreprise"
+        },
+        {
+            "code" : "R2.12",
+            "titre" : "Création d'un site web en anglais - BUT 1 (2023/2024)",
+            "resume" : "En équipe de quatre, nous avons créé le site web d'une entreprise fictive en anglais"
+        },
+        {
+            "code" : "S1.056",
+            "titre" : "Adaptation du site web d'une ESN pour un public précis - BUT 1 (2023/2024)",
+            "resume" : "Nous avons créé une nouvelle version du site web d'Atos à destination d'élève de troisième à la recherche d'un stage."
+        },
+        {
+            "code" : "S2.04",
+            "titre" : "Étude du nutri-score d'une catégorie de produits - BUT 1 (2023/2024)",
+            "resume" : "En équipe de deux, nous avons réalisé une étude en anglais illustrée de graphiques adaptés"
+        },
+        {
+            "code" : "S1.012",
+            "titre" : "Génération automatique d'un lexique pour classer des dépêches - BUT 1 (2023/2024)",
+            "resume" : "Nous avons codé un algorithme qui génère un lexique à partir de dépêches afin de pouvoir les classer dans différentes catégories."
+        }
+    ]
+}
