@@ -1,47 +1,65 @@
 /* ------ NavBar ------- */
 .barNav {
-    width: 100%;
-    position: fixed;
-}
-
-.barNav ul {
     display: flex;
-    flex-direction: row;
-    padding: 0px;
-    margin: 0px;
+    gap: 1vh;
     width: 100%;
+    height: 9vh;
+    position: fixed;
+    padding: 1vh;
 }
 
-.barNav li {
-    list-style-type: none;
-    width: 100%;
-    text-align: center;
+.barNav div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vh;
+    height: 100%;
+}
+
+.barNav div:first-of-type, .barNav a {
+    background-color: orange;
+    border-radius: 25%;
+    box-shadow: 5px 5px wheat;
+    cursor: pointer;
+}
+
+.barNav div:first-of-type, .barNav div:nth-child(2) {
+    width: 10vh;
+}
+
+#accueil, #aProposPage, #parcoursPage, #associationPage, #projetPage {
+    display: none;
 }
 
 .barNav a {
     text-decoration: none;
-    background-color: rgb(255, 176, 30);
-    color: black;
-    display: block;
-    padding: 7%;
+    border-radius: 50%;
+    color: white;
     font-size: 150%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
-.navHover a {
-    background-color: rgb(209, 32, 32);
-    color: white;
+.barNav a:hover, .barNav div:first-of-type:hover {
+    background-color: darkorange;
+    box-shadow: none;
 }
 
-.barNav a:hover {
-    background-color: rgb(209, 32, 32);
-    color: white;
+/* Gestion du lien de la page courrante */
+#currentPage {
+    background-color: darkred;
+    box-shadow: none;
 }
 
-@media screen and (max-width:800px) {
-    .barNav ul li a {
-        font-size: 100%;
-        padding: 30px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
+#currentPage:hover {
+    background-color: darkred;
 }
+
+.barNav img {
+    height: 60%;
+}
+
+

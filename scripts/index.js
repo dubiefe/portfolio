@@ -49,25 +49,4 @@ let timer4 = setInterval(function() {
     associationPage.style.left = centerX + timePassed4 / 3 + 'px';
     if (timePassed4 > 1500) clearInterval(timer4);
 }, 20);
-
-// let start2 = Date.now();
-// let timer2 = setInterval(function() {
-//     let timePassed2 = Date.now() - start2;
-//     parcoursPage.style.right = timePassed2 / 5 + 'px';
-//     if (timePassed2 > 2000) clearInterval(timer2);
-// }, 20);
-
-// let start3 = Date.now();
-// let timer3 = setInterval(function() {
-//     let timePassed3 = Date.now() - start3;
-//     associationPage.style.left = timePassed3 / 5 + 'px';
-//     if (timePassed3 > 2000) clearInterval(timer3);
-// }, 20);
-
-// let start4 = Date.now();
-// let timer4 = setInterval(function() {
-//     let timePassed4 = Date.now() - start4;
-//     projetPage.style.top = timePassed4 / 7 + 'px';
-//     if (timePassed4 > 2000) clearInterval(timer4);
-// }, 20);
     

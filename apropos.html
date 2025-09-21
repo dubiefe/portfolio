@@ -11,14 +11,12 @@
 </head>
 <body>
     <span class="barNav">
-        <nav>
-            <ul>
-                <li><a href="index.html" class="nav2">Accueil</a></li>
-                <li class="navHover"><a href="apropos.html">À propos</a></li>
-                <li><a href="projets.html" class="nav3">Projets</a></li>
-                <li><a href="association.html" class="nav4">Engagements</a></li>
-            </ul>
-        </nav>
+        <div id="hamburger"><img src="style/Images/hamburger-svgrepo-com.svg" alt="hamburger_menu"></div>
+        <div id="accueil"><a href="index.html"><img src="style/Images/home-svgrepo-com.svg" alt="accueil"></a></div>
+        <div id="aProposPage"><a id="currentPage" href="apropos.html">À propos</a></div>
+        <div id="parcoursPage"><a href="parcours.html">Parcours</a></div>
+        <div id="associationPage"><a href="association.html">Engagements</a></div>
+        <div id="projetPage"><a href="projets.html">Projets</a></div>
     </span>
     <main class="aProposEngements">
         <section>
@@ -57,4 +55,5 @@
         </section>     
     </main>
 </body>
+<script src="scripts/nav.js"></script>
 </html>
