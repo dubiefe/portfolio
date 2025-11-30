@@ -10,10 +10,6 @@ body {
     height: fit-content;
     background-color: #f5d97c;
     background-image:  linear-gradient(30deg, #f7ce45 12%, transparent 12.5%, transparent 87%, #f7ce45 87.5%, #f7ce45), linear-gradient(150deg, #f7ce45 12%, transparent 12.5%, transparent 87%, #f7ce45 87.5%, #f7ce45), linear-gradient(30deg, #f7ce45 12%, transparent 12.5%, transparent 87%, #f7ce45 87.5%, #f7ce45), linear-gradient(150deg, #f7ce45 12%, transparent 12.5%, transparent 87%, #f7ce45 87.5%, #f7ce45), linear-gradient(60deg, #f7ce4577 25%, transparent 25.5%, transparent 75%, #f7ce4577 75%, #f7ce4577), linear-gradient(60deg, #f7ce4577 25%, transparent 25.5%, transparent 75%, #f7ce4577 75%, #f7ce4577);
-   
-    /* background-color: #095228; 
-    background-image:  linear-gradient(30deg, #1e603a 12%, transparent 12.5%, transparent 87%, #1e603a 87.5%, #1e603a), linear-gradient(150deg, #1e603a 12%, transparent 12.5%, transparent 87%, #1e603a 87.5%, #1e603a), linear-gradient(30deg, #1e603a 12%, transparent 12.5%, transparent 87%, #1e603a 87.5%, #1e603a), linear-gradient(150deg, #1e603a 12%, transparent 12.5%, transparent 87%, #1e603a 87.5%, #1e603a), linear-gradient(60deg, #326f4c 25%, transparent 25.5%, transparent 75%, #326f4c 75%, #326f4c), linear-gradient(60deg, #326f4c 25%, transparent 25.5%, transparent 75%, #326f4c 75%, #326f4c); */
-
     background-size: 20px 35px;
     background-position: 0 0, 0 0, 10px 18px, 10px 18px, 0 0, 10px 18px;
     display: flex;
