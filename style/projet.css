@@ -123,6 +123,14 @@ h1 {
     display: flex;
 }
 
+.corps_projet section article {
+    flex-basis: 50%;
+}
+
+#details_comp_tech {
+    flex-wrap: wrap;
+}
+
 .competencesprojet div {
     margin-top: 20px;
     margin-bottom: 20px;
