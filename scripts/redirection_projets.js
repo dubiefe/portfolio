@@ -15,9 +15,10 @@ async function getProjet () {
     if (resObj.ok) {
         // If the result is OK (Status HTTP between 200 and 299)
         const resJSON = await resObj.json();
-        const projets = resJSON["IUT"];
-        console.log(projets);
-        afficheProjet(projets);
+        const projets_IUT = resJSON["IUT"];
+        const projets_Perso = resJSON["Perso"];
+        afficheProjet(projets_IUT, "IUT");
+        afficheProjet(projets_Perso, "Perso");
     }  else {
         // Else we display the error
         console.error(resObj);
@@ -25,9 +26,14 @@ async function getProjet () {
 }
 
 //<div name="btn_projets" projet="test"></div>
-async function afficheProjet (projets) {
+async function afficheProjet (projets, type) {
     // Récupérer les éléments html
-    const projets_IUT = document.getElementById("projetsIUT")
+    let div_projets;
+    if(type === "IUT") {
+        div_projets = document.getElementById("projetsIUT")
+    } else {
+        div_projets = document.getElementById("projetsPerso")
+    }
     projets.forEach(projet => {
         // Titre
         const h3 = document.createElement("h3");
@@ -43,6 +49,7 @@ async function afficheProjet (projets) {
         const btn_projet = document.createElement("a");
         btn_projet.setAttribute("name","btn_projets");
         btn_projet.setAttribute("projet",projet.code);
+        btn_projet.setAttribute("class","button");
         const imageLoupe = document.createElement("img");
         imageLoupe.src = "style/Images/magnifier-search-zoom-svgrepo-com.svg";
         imageLoupe.alt = "plus d'information";
@@ -53,8 +60,8 @@ async function afficheProjet (projets) {
         divGlobale.append(divText);
         divGlobale.append(btn_projet);
         // Ajout à la page
-        projets_IUT.append(divGlobale);
-        projets_IUT.append(document.createElement("hr"));
+        div_projets.append(divGlobale);
+        div_projets.append(document.createElement("hr"));
     });
     // Récupération des éléments
     const btn_projets = document.getElementsByName("btn_projets");

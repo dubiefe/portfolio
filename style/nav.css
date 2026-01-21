@@ -19,9 +19,11 @@
 
 .barNav div:first-of-type, .barNav a {
     background-color: orange;
-    border-radius: 25%;
-    box-shadow: 5px 5px wheat;
+    border-radius: 1vh;
+    box-shadow: 0.5vh 0.5vh wheat;
     cursor: pointer;
+    margin-bottom: 0.5vh;
+    margin-right: 0.5vh;
 }
 
 .barNav div:first-of-type, .barNav div:nth-child(2) {
@@ -34,7 +36,7 @@
 
 .barNav a {
     text-decoration: none;
-    border-radius: 2vh;
+    border-radius: 1vh;
     color: white;
     font-size: 150%;
     display: flex;
@@ -47,6 +49,10 @@
 .barNav a:hover, .barNav div:first-of-type:hover {
     background-color: darkorange;
     box-shadow: none;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-top: 0.5vh;
+    margin-left: 0.5vh;
 }
 
 /* Gestion du lien de la page courrante */

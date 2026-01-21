@@ -57,7 +57,7 @@
     border: 2px solid rgb(255, 245, 223);
     background-color: rgb(255, 245, 223);
     box-shadow: 5px 5px 5px wheat;
-    border-radius: 25px;
+    border-radius: 1vh;
     z-index: 2;
 }
 
@@ -72,20 +72,12 @@
     height: fit-content;
     text-decoration: none;
     font-size: 150%;
-    color: white;
-    background-color: orange;
-    box-shadow: 5px 5px wheat;
-    border-radius: 2vh;
+    border-radius: 1vh;
     display: flex;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
     padding: 4vh;
-}
-
-.index a:hover {
-    background-color: darkorange;
-    box-shadow: none;
 }
 
 @media screen and (max-width: 800px) {

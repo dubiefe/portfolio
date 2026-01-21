@@ -1,9 +1,19 @@
 {
     "IUT" : [
         {
+            "code" : "UT.DWC",
+            "titre" : "Développement d'un Taste Mixer avec l'API de Spotify  - BUT 3 (2025/2026)",
+            "resume" : "Lors du cours de developpement web côté client, j'ai développé une application Next afin de créer des playlists personnalisé avec l'API de Spotify"
+        },
+        {
             "code" : "ST4.01",
             "titre" : "Uniformisation d'une suite d'application - BUT 2 (2024/2025)",
             "resume" : "Lors du stage de fin de deuxième année de BUT, j'ai passé 10 semaines dans l'entreprise TotalEnergies afin d'uniformiser une suite d'application PowerApps"
+        },
+        {
+            "code" : "R4.01",
+            "titre" : "Développement d'un site en Javascript - BUT 2 (2024/2025)",
+            "resume" : "En équipe de deux, nous avons créé une application en Javascript Vanilla suivant une architecture MVC afin de communiquer avec un API référençant des films"
         },
         {
             "code" : "S3.01",
@@ -34,6 +44,18 @@
             "code" : "S1.012",
             "titre" : "Génération automatique d'un lexique pour classer des dépêches - BUT 1 (2023/2024)",
             "resume" : "Nous avons codé un algorithme qui génère un lexique à partir de dépêches afin de pouvoir les classer dans différentes catégories."
+        }
+    ],
+    "Perso" : [
+        {
+            "code" : "Fleur",
+            "titre" : "Participation à une exposition d'art de mon lycée - 2023",
+            "resume" : "Pendant plusieurs semaines, j'ai réalisé un projet artistique autour du thème \"La renaissance des couleurs\""
+        },
+        {
+            "code" : "MySmallLibrary",
+            "titre" : "Développement d'une application de bibliothèque en React - 2025",
+            "resume" : "Pour une amie, j'ai codé une application en React permettant de noter des passages de livres"
         }
     ]
 }

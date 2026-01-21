@@ -36,23 +36,29 @@ async function afficheProjet (projet) {
     // Titre
     titre_projet.textContent = projet.titre;
     // Compétences techniques
-    projet.comp_tech.forEach(comp => {
-        const img = document.createElement("img");
-        img.src = "informations projets/Images/" + comp + ".png";
-        img.alt = comp;
-        const p = document.createElement("p");
-        p.textContent = comp;
-        const div = document.createElement("div");
-        div.append(img);
-        div.append(p);
-        comp_tech.append(div);
-    });
+    if (projet.comp_tech) {
+        projet.comp_tech.forEach(comp => {
+            const img = document.createElement("img");
+            img.src = "Info_Projets/Images/Tools/" + comp + ".png";
+            img.alt = comp;
+            const p = document.createElement("p");
+            p.textContent = comp;
+            const div = document.createElement("div");
+            div.append(img);
+            div.append(p);
+            comp_tech.append(div);
+        });
+    } else {
+        comp_tech.parentElement.remove();
+    }
     // Compétence PN
-    projet.comp_PN.forEach(comp => {
-        const p = document.createElement("p");
-        p.textContent = comp;
-        comp_pn.append(p);
-    });
+    if (projet.comp_PN) {
+        projet.comp_PN.forEach(comp => {
+            const p = document.createElement("p");
+            p.textContent = comp;
+            comp_pn.append(p);
+        });
+    } else {comp_pn.parentElement.remove()}
     // Information complémentaires
     projet.info_comp.forEach(info => {
         info_comp.innerHTML += info;
