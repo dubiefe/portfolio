@@ -48,14 +48,14 @@
     ],
     "Perso" : [
         {
-            "code" : "Fleur",
-            "titre" : "Participation à une exposition d'art de mon lycée - 2023",
-            "resume" : "Pendant plusieurs semaines, j'ai réalisé un projet artistique autour du thème \"La renaissance des couleurs\""
-        },
-        {
             "code" : "MySmallLibrary",
             "titre" : "Développement d'une application de bibliothèque en React - 2025",
             "resume" : "Pour une amie, j'ai codé une application en React permettant de noter des passages de livres"
+        },
+        {
+            "code" : "Fleur",
+            "titre" : "Participation à une exposition d'art de mon lycée - 2023",
+            "resume" : "Pendant plusieurs semaines, j'ai réalisé un projet artistique autour du thème \"La renaissance des couleurs\""
         }
     ]
 }

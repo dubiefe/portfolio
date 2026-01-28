@@ -20,7 +20,7 @@
 
 .mesProjets div div {
     background-color: rgb(255, 245, 223);
-    border-radius: 20px;
+    border-radius: 3vh;
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -142,7 +142,7 @@ h1 {
 
 .competencesprojet > div {
     display: flex;
-    gap: 6vh;
+    gap: 4vh;
     margin-bottom: 0;
 }
 
@@ -176,7 +176,8 @@ h1 {
 .page_projet .competencesprojet img {
     float: left;
     margin: 5px;
-    width: 100px;
+    height: 8vh;
+    width: 8vh;
 }
 
 .page_projet_perso article div {

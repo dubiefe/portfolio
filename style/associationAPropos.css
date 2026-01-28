@@ -21,7 +21,7 @@
     flex-basis: 100%;
 }
 
-.aProposEngements article h2 {
+.aProposEngements article h2, .parcours h2 {
     margin: 0px;
     margin-bottom: 10px;
 }
