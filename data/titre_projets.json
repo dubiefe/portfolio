@@ -6,6 +6,11 @@
             "resume" : "Lors du cours de developpement web côté client, j'ai développé une application Next afin de créer des playlists personnalisé avec l'API de Spotify"
         },
         {
+            "code" : "UT.ADB",
+            "titre" : "Mise en place d'outils de gestion de base de données pour un réseau social  - BUT 3 (2025/2026)",
+            "resume" : "Lors du cours de base de données, j'ai utilisé différentes bases de données afin de créer des outils pour gérer les données d'un réseau social fictif"
+        },
+        {
             "code" : "ST4.01",
             "titre" : "Uniformisation d'une suite d'application - BUT 2 (2024/2025)",
             "resume" : "Lors du stage de fin de deuxième année de BUT, j'ai passé 10 semaines dans l'entreprise TotalEnergies afin d'uniformiser une suite d'application PowerApps"
