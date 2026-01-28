@@ -53,6 +53,11 @@
             "resume" : "Pour une amie, j'ai codé une application en React permettant de noter des passages de livres"
         },
         {
+            "code" : "CodeName",
+            "titre" : "Développement d'une PowerApp CodeName - 2024",
+            "resume" : "Afin de me préparer à mon stage de BUT2, j'ai réalisé une PowerApp reproduisant le jeu CodeName"
+        },
+        {
             "code" : "Fleur",
             "titre" : "Participation à une exposition d'art de mon lycée - 2023",
             "resume" : "Pendant plusieurs semaines, j'ai réalisé un projet artistique autour du thème \"La renaissance des couleurs\""
