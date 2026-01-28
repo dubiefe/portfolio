@@ -11,6 +11,11 @@
             "resume" : "Lors du cours de base de données, j'ai utilisé différentes bases de données afin de créer des outils pour gérer les données d'un réseau social fictif"
         },
         {
+            "code" : "UT.AI",
+            "titre" : "Création de modèles NLP et CNN pour de la classification - BUT 3 (2025/2026)",
+            "resume" : "Lors du cours d'intelligence artificielle, j'ai réalisé des notebook Kaggle pour classifier des images d'animaux et des spams/non-spam"
+        },
+        {
             "code" : "ST4.01",
             "titre" : "Uniformisation d'une suite d'application - BUT 2 (2024/2025)",
             "resume" : "Lors du stage de fin de deuxième année de BUT, j'ai passé 10 semaines dans l'entreprise TotalEnergies afin d'uniformiser une suite d'application PowerApps"

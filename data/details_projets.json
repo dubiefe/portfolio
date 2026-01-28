@@ -171,6 +171,20 @@
                 "<p>La création de playlist est basée sur une sélection de morceaux en fonction des choix de l'utilisateur. Les morceaux choisis sont directement ajoutés à la playlist. Pour les albums, artistes et podcasts, deux morceaux sont choisis au hasard dans leur contenu. L'ajout de musique de Noël vient piocher deux musiques aléatoires dans une playlist de Noël créée par Spotify.</p>",
                 "<p><a href=\"https://github.com/dubiefe/Soptify-Taste-Mixer\" target=\"_blank\">Pour consulter le GitHub du projet, cliquez sur ce lien.</a></p>"]          
     },
+    "UT.AI": {
+        "titre" : "Création de modèles NLP et CNN pour de la classification",
+        "comp_tech" : ["Kaggle","Python"],
+        "info_comp" : ["<p>Dans le cadre d'un cours d'intelligence artificielle, j'ai réalisé deux notebook Kaggle pour faire de la classification automatique.</p>",
+                "<p>Les deux notebooks sont rédigés en anglais puisque je les ai réalisés dans le cadre de mon année à l'étranger.</p>",
+                "<p class=\"etape\">CNN pour des photos de chiens et de chats</p>",
+                "<p>Pour ce premier notebook, j'ai dû construire un modèle permettant la classification binaire d'images de chiens et de chats.</p>",
+                "<p><a class=\"lienTelechargeable\" href=\"Info_Projets/Documents/UT_AI/CyD_Emilie_Dubief.ipynb\" download=\"CyD_Emilie_Dubief.ipynb\">CyD_Emilie_Dubief.ipynb</a>, pour télécharger le notebook.</p>",
+                "<iframe src=\"Info_Projets/Documents/UT_AI/CyD_Emilie_Dubief.html\"></iframe>",
+                "<p class=\"etape\">NLP pour des spams/non-spam</p>",
+                "<p>Pour ce second notebook, j'ai dû construire un modèle permettant la classification binaire de spams et de non-spams.</p>",
+                "<p><a class=\"lienTelechargeable\" href=\"Info_Projets/UT_AI/NLP_Emilie_Dubief.ipynb\" download=\"NLP_Emilie_Dubief.ipynb\">NLP_Emilie_Dubief.ipynb</a>, pour télécharger le notebook.</p>",
+                "<iframe src=\"Info_Projets/Documents/UT_AI/NLP_Emilie_Dubief.html\"></iframe>"]          
+    },
     "UT.ADB": {
         "titre" : "Mise en place d'outils de gestion de base de données pour un réseau social",
         "comp_tech" : ["MongoDB","Redis","Neo4J","Python"],
