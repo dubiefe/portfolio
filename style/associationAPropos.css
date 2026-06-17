@@ -21,6 +21,17 @@
     flex-basis: 100%;
 }
 
+.aProposEngements .contact img {
+    width: 4vh;
+    margin: 1vh 2vh 1vh 1vh;
+}
+
+.aProposEngements .contact p {
+    display: flex;
+    align-items: center;
+    text-indent: 0;
+}
+
 .aProposEngements article h2, .parcours h2 {
     margin: 0px;
     margin-bottom: 10px;
@@ -33,6 +44,17 @@
 
 .ideklic li {
     list-style-type: none;
+}
+
+.parcours #open_details_erasmus {
+    cursor: pointer;
+    width: 2vh;
+}
+
+.parcours #details_erasmus {
+    display: none;
+    margin-left: 60px;
+    text-indent: 60px;
 }
 
 @media screen and (max-width: 1000px) {
