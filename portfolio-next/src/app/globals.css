@@ -1,0 +1,36 @@
+html {
+  height: 100%;
+}
+
+html, body {
+  max-width: 100vw;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.button {
+    border-radius: 1vh;
+    color: rgb(246, 255, 255);
+    background-color: #FFBD59;
+    border: 3px solid #fdb03c;
+    box-shadow: 0.5vh 0.5vh #FFBD59;
+    cursor: pointer;
+    margin-bottom: 0.5vh;
+    margin-right: 0.5vh;
+}
+
+.button:hover {
+    background-color: #FF914D;
+    box-shadow: none;
+    border: 3px solid #FF914D;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-top: 0.5vh;
+    margin-left: 0.5vh;
+}
+

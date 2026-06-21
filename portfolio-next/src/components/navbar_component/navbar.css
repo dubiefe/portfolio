@@ -1,0 +1,30 @@
+.navbar_container {
+    display: flex;
+    align-items: center;
+    gap: 2vh;
+    padding-left: 2vh;
+    width: 100%;
+    box-sizing: border-box;
+    height: 10vh;
+    background-color: #FFE4BB;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navbar_container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    text-decoration: none;
+    font-size: 2vh;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 2vh;
+}
+
+.navbar_container a img {
+    height: 100%;
+}
+
