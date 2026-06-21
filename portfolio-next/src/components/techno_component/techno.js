@@ -1,0 +1,11 @@
+'use client';
+
+import React from 'react';
+import './techno.css'
+
+export default function Techno(props) {
+
+  return (
+    <img className='techno_img' src={"/techno/" + props.item + ".png"} title={props.item}/>
+  );
+}
