@@ -19,13 +19,13 @@ export default function Home() {
     <main className="home_container">
       <div className="div_left">
           {techno && techno.slice(0, first_percent).map(item => {
-            return <Techno key={item} item={item}/>
+            return <Techno key={item} item={item} size={Math.floor(Math.random() * 6) + 8}/>
           })}
       </div>
       <div className="div_center">
         <div className="div_top">
           {techno && techno.slice(second_percent, third_percent).map(item => {
-            return <Techno key={item} item={item}/>
+            return <Techno key={item} item={item} size={Math.floor(Math.random() * 6) + 8}/>
           })}
         </div>
         <div className="div_middle">
@@ -34,13 +34,13 @@ export default function Home() {
         </div>
         <div className="div_bottom">
           {techno && techno.slice(third_percent, techno.length).map(item => {
-            return <Techno key={item} item={item}/>
+            return <Techno key={item} item={item} size={Math.floor(Math.random() * 6) + 8}/>
           })}
         </div>
       </div>
       <div className="div_right">
           {techno && techno.slice(first_percent, second_percent).map(item => {
-            return <Techno key={item} item={item}/>
+            return <Techno key={item} item={item} size={Math.floor(Math.random() * 6) + 8}/>
           })}
       </div>
     </main>

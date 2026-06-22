@@ -1,5 +1,6 @@
 .home_container {
     display: flex;
+    height: 83vh;
 }
 
 .div_left, .div_right, .div_top, .div_bottom {
