@@ -1,10 +1,11 @@
 .footer_container {
     display: flex;
     align-items: center;
-    padding-left: 2vh;
+    justify-content: end;
+    padding-right: 2vh;
     width: 100%;
     box-sizing: border-box;
     height: 7vh;
-    background-color: #FFE4BB;
-    color: rgba(0, 0, 0, 0.384);
+    background-color: var(--light);
+    color: var(--text-medium);
 }

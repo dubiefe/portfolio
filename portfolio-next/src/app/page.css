@@ -28,8 +28,8 @@
     box-sizing: border-box;
     margin: 2vh;
     border-radius: 2vh;
-    background-color: #FFBD59;
-    color: white;
+    background-color: var(--classic);
+    color: var(--text-light);
 }
 
 .div_middle h1 {

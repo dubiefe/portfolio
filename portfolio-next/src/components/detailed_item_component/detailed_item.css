@@ -1,0 +1,59 @@
+.detailed_item_container {
+    display: flex;
+    align-items: center;
+}
+
+.detailed_item_container .picture_container {
+    border: 3px solid var(--classic);
+    border-radius: 3vh;
+    height: 25vh;
+    width: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.detailed_item_container .picture_container:hover ~ .text_container{
+    width: 35vh;
+    padding: 1.5vh 2vh;
+}
+
+.detailed_item_container .picture_container:hover ~ .text_container h3, .detailed_item_container .picture_container:hover ~ .text_container p {
+    display: block;
+}
+
+.detailed_item_container .picture_container img {
+    width: 80%;
+}
+
+.detailed_item_container .text_container {
+    display: flex;
+    background-color: var(--light);
+    border-radius: 0 3vh 3vh 0;
+    height: 19vh;
+    width: 0;
+    flex-direction: column;
+    z-index: 9;
+    transition: width 1s, padding 1s;
+}
+
+.detailed_item_container .text_container h3 {
+    display: none;
+    margin: 0;
+    margin-bottom: 0.5vh;
+    font-size: 2.5vh;
+}
+
+.detailed_item_container .text_container p {
+    display: none;
+    overflow: auto;
+    font-size: 1.75vh;
+    margin: 0;
+    margin-top: 0.5vh;
+}
+
+.text_container p::-webkit-scrollbar {
+    width: 0;
+}

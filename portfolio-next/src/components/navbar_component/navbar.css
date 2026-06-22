@@ -6,7 +6,7 @@
     width: 100%;
     box-sizing: border-box;
     height: 10vh;
-    background-color: #FFE4BB;
+    background-color: var(--light);
     position: fixed;
     top: 0;
     left: 0;

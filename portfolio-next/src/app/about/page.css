@@ -1,0 +1,75 @@
+.about_container hr {
+    border: none;
+    border-radius: 2vh;
+    height: 0.4vh;
+    margin: 2vh 3vh;
+    background-color: var(--classic);
+}
+
+/* ------ Main Info ------ */
+
+.about_container .main_info_container {
+    display: flex;
+    gap: 2vh;
+    box-sizing: border-box;
+    padding: 3vh;
+}
+
+.about_container .main_info_container > img {
+    width: 26vh;
+    height: 26vh;
+    border-radius: 13vh;
+}
+
+.about_container .main_info_container > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about_container .main_info_container > div h1 {
+    margin-bottom: 0;
+    font-size: 3vh;
+}
+
+.about_container .main_info_container > div p {
+    font-size: 2vh;
+    margin: 0.5vh 0;
+    text-indent: 1vh;
+}
+
+.about_container .main_info_container .button_container {
+    height: 30%;
+    display: flex;
+    gap: 2vh;
+}
+
+.about_container .main_info_container .button_container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+    width: 7vh;
+}
+
+.about_container .main_info_container .button_container a img {
+    width: 80%;
+    height: 80%;
+}
+
+/* ------ Languages & Interests ------ */
+
+.about_container .languages_container, .about_container .interests_container {
+    margin: 3vh;
+}
+
+.about_container .languages_container > h1, .about_container .interests_container > h1 {
+    font-size: 3vh;
+    color: var(--dark);
+}
+
+.about_container .languages_container > div, .about_container .interests_container > div {
+    display: flex;
+    gap: 2vh;
+    flex-wrap: wrap;
+}
